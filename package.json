@@ -1,0 +1,25 @@
+{
+    "name": "tnw",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "run-script-os",
+        "start:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Wahaha-007/tnw.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.13",
+        "run-script-os": "^1.1.5"
+    },
+    "bugs": {
+        "url": "https://github.com/Wahaha-007/tnw/issues"
+    },
+    "homepage": "https://github.com/Wahaha-007/tnw#readme"
+}
