@@ -30,12 +30,14 @@ header {
     align-items: center;
     padding: 0 10px;
     background: #f7f8f8;
+    color: black;
 }
 
 .header-sub {
     padding: 10px 10px;
     background: linear-gradient(180deg, #eccd30, #f4d432);
     font-size: small;
+    color: black;
 }
 
 .header-shadow {
@@ -485,6 +487,7 @@ main .w-video-container {
 .w-video-container .big-video {
     display: grid;
     grid-template-rows: auto 145px;
+    padding-left: 30px;
 }
 
 .big-video .video-body {
@@ -511,7 +514,16 @@ main .w-video-container {
 
 .list-video .list-video-item img {
     width: 100%;
-    height: 120px;
+    height: 180px;
+}
+
+.list-video .list-video-item .title {
+    margin: 0 0 16px 0;
+}
+
+.list-video .list-video-item p:hover {
+    text-decoration: underline pink wavy;
+    cursor: pointer;
 }
 
 
@@ -608,7 +620,7 @@ footer {
 .footer-up .right {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .footer-up .social-button ul {
@@ -617,10 +629,11 @@ footer {
     flex-direction: row;
     justify-items: start;
     column-gap: 20px;
+    padding-inline-start: 0;
 }
 
 .footer-up .left {
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .footer-up .right1 ul,
@@ -646,6 +659,10 @@ footer {
     font-weight: bolder;
     color: white;
     text-decoration: none;
+}
+
+.footer-down a:hover {
+    color: #cc0099;
 }
 
 @media screen and (max-width:1024px) {
